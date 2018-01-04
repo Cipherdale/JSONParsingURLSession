@@ -68,6 +68,7 @@ extension ItemListVC {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: itemListCellId)
+        cell.accessoryType = .disclosureIndicator
         if let data = itemData?[indexPath.row] {
             cell.textLabel?.text = data.itemBrand
             cell.detailTextLabel?.text = data.itemName
