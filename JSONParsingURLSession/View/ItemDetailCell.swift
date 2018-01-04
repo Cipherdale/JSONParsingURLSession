@@ -95,7 +95,7 @@ class ItemDetailCell: UITableViewCell {
         itemLabel.topAnchor.constraint(equalTo: itemImageView.bottomAnchor, constant: 8).isActive = true
         itemLabel.leftAnchor.constraint(equalTo: itemImageView.leftAnchor, constant: 0).isActive = true
         itemLabel.rightAnchor.constraint(equalTo: itemImageView.rightAnchor, constant: 0).isActive = true
-        itemLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 12).isActive = true
+        itemLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12).isActive = true
     }
     
     
