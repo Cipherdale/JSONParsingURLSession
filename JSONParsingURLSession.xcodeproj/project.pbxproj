@@ -52,6 +52,10 @@
 		E67494AD1FFE230100FA31C4 /* JSONParsingURLSession */ = {
 			isa = PBXGroup;
 			children = (
+				E67494C01FFE24DE00FA31C4 /* DataService */,
+				E67494C11FFE24E800FA31C4 /* Model */,
+				E67494C21FFE24EE00FA31C4 /* View */,
+				E67494C31FFE24F500FA31C4 /* Controller */,
 				E67494AE1FFE230100FA31C4 /* AppDelegate.swift */,
 				E67494B01FFE230100FA31C4 /* ViewController.swift */,
 				E67494B51FFE230100FA31C4 /* Assets.xcassets */,
@@ -59,6 +63,34 @@
 				E67494BA1FFE230100FA31C4 /* Info.plist */,
 			);
 			path = JSONParsingURLSession;
+			sourceTree = "<group>";
+		};
+		E67494C01FFE24DE00FA31C4 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		E67494C11FFE24E800FA31C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E67494C21FFE24EE00FA31C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E67494C31FFE24F500FA31C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
