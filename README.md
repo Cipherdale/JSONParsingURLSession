@@ -15,6 +15,15 @@ Example project that implemented JSON parsing with URLSession, fetch group with 
 ### Installation note
 - Sample url still http not https, so you need to changed your info.plist
 - Please add this to your info.plist
+ <br>
+ ```
+<key>NSAppTransportSecurity</key>
+<dict>
+  <!--Include to allow all connections (DANGER)-->
+  <key>NSAllowsArbitraryLoads</key>
+      <true/>
+</dict>
+```
 
 ### Current development tools
 
