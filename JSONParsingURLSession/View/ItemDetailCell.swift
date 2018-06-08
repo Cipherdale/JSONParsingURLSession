@@ -45,19 +45,19 @@ class ItemDetailCell: UITableViewCell {
             
             downloadImage(urlString: data.itemImageUrl)
             
-            let titleAttributedText = NSMutableAttributedString(string: "id: \(data.itemId)", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .regular)])
-            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [.font: UIFont.systemFont(ofSize: 4)]))
-            titleAttributedText.append(NSAttributedString(string: "Brand: \(data.itemBrand)", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
-            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [.font: UIFont.systemFont(ofSize: 4)]))
-            titleAttributedText.append(NSAttributedString(string: "Name: \(data.itemName)", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
-            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [.font: UIFont.systemFont(ofSize: 4)]))
-            titleAttributedText.append(NSAttributedString(string: "Price: \(data.itemPrice),-", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
-            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [.font: UIFont.systemFont(ofSize: 4)]))
+            let titleAttributedText = NSMutableAttributedString(string: "id: \(data.itemId)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .regular)])
+            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 4)]))
+            titleAttributedText.append(NSAttributedString(string: "Brand: \(data.itemBrand)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
+            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 4)]))
+            titleAttributedText.append(NSAttributedString(string: "Name: \(data.itemName)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
+            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 4)]))
+            titleAttributedText.append(NSAttributedString(string: "Price: \(data.itemPrice),-", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
+            titleAttributedText.append(NSAttributedString(string: "\n\n", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 4)]))
             
             if data.itemDescription != "" {
-                titleAttributedText.append(NSAttributedString(string: "Description:\n\(data.itemDescription)", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
+                titleAttributedText.append(NSAttributedString(string: "Description:\n\(data.itemDescription)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
             } else {
-                titleAttributedText.append(NSAttributedString(string: "Description: N/A", attributes: [.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
+                titleAttributedText.append(NSAttributedString(string: "Description: N/A", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .regular)]))
             }
             
             itemLabel.attributedText = titleAttributedText
@@ -68,7 +68,7 @@ class ItemDetailCell: UITableViewCell {
     
     
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
     }
